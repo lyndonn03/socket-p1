@@ -12,4 +12,6 @@ The repository has two parts, the server and the client. These are two different
 
 ## About the Thread per Connection Model
 
-The thread per connection model, as its name suggests, is a model for client-server connection that allocates one thread per connection. This is the simplest way of network communication. When the client connects, you open a thread and that thread will be the server side end of the communication. The thread will never be destroyed unless the client or the server disconnects. 
+The thread per connection model, as its name suggests, is a model for client-server connection that allocates one thread per connection. This is the simplest way of network communication. When the client connects, you open a thread and that thread will be the server side end of the communication. The thread will never be destroyed unless the client or the server disconnects. To visualize how I implemented this model using Java, you can refer to the diagram below.
+
+![Client-Server (thread per conn) model diagram drawio](https://user-images.githubusercontent.com/42237180/196209652-15d7d625-4f1b-42d3-bd71-e171b6088649.png)
